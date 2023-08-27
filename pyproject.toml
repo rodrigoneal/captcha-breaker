@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "captcha-breaker"
+version = "0.1.0"
+description = "\"Quebrador de captcha\""
+authors = ["Rodrigo Casrtro <rodrigo.castro@digitalpath.com.br>"]
+readme = "README.md"
+packages = [{include = "captcha_breaker"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+anticaptchaofficial = "^1.0.53"
+python-dotenv = "^1.0.0"
+selenium-recaptcha-solver = "^1.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
